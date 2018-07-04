@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	vertical-align: top;
+	text-decoration: none;
+	color: #222;
+	font-size: 14px;
+}
+
+.wrap {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.header {
+	height: 100px;
+	padding-top: 20px;
+}
+
+.mainslide {
+	position: relative;
+	width: 100%;
+	height: 460px;
+	z-index: 100;
+}
+
+.contents {
+	padding-top: 30px;
+	height: 470px;
+}
+
+.footer {
+	height: 100px;
+}
+
+.header h1 {
+	float: left;
+	padding-top: 10px;
+}
+
+.menu_depth1 {
+	float: right;
+}
+
+.menu_depth1 > li {
+	position: relative;
+	float: left;
+	padding-top: 10px;
+}
+
+.menu_depth1 a {
+	display: block;
+	width: 230px;
+	text-align: center;
+	font-size: 18px;
+}
+
+.menu_depth1 a:hover {
+	font-weight: bold;
+	color: #ffcc00;
+	font-size: 20px;
+}
+
+.menu_depth2 {
+	display: none;
+	position: absolute;
+	top: 30px;
+	left: 0;
+	background: rgba(255, 255, 255, .6);
+	z-index: 200;
+	padding-top: 20px;
+}
+
+.mainslide ul {
+	float: right;
+}
+
+.mainslide .big {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.mainslide .small {
+	opacity: 0.5;
+}
+
+.col1 {
+	float: left;
+	width: 400px;
+}
+
+.col2 {
+	float: left;
+	width: 200px;
+	margin: 0 30px;
+}
+
+.col2 li {
+	margin: 40px 0;
+	line-height: 70px;
+}
+
+.col2 strong {
+	margin: 10px;
+}
+
+.col3 {
+	float: left;
+	width: 540px;
+}
+
+.col3 img {
+	width: 540px;
+}
+
+.header h1 {
+	margin-bottom: 20px;
+}
+
+.col1 li {
+	margin-bottom: 25px;
+}
+
+.col1 a {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	display: inline-block;
+	width: 350px;
+}
+
+.col2 a {
+	display: block;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.img_g {
+	display: inline-block;
+	background: url(../imgs/icon.png) 0 0 no-repeat;
+}
+
+.col2 .ico1 {
+	width: 76px;
+	height: 76px;
+	background-position: 0 0;
+}
+
+.ico2 {
+	width: 76px;
+	height: 76px;
+	background-position: -76px 0;
+}
+
+.ico3 {
+	width: 76px;
+	height: 76px;
+	background-position: -152px 0;
+}
+
+.contents h2 {
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+	border-bottom: 2px solid #aaa;
+	font-size: 18px;
+}
+
+.foot_logo {
+	background: #eee;
+	width: 260px;
+	height: 70px;
+	float: left;
+	padding: 30px 0 0 40px;
+
+}
+
+.foot_menu {
+	float: right;
+	text-align: center;
+	background: #444;
+	width: 900px;
+	height: 80px;
+	padding: 10px 0;
+}
+
+.footer a {
+	color: #fff;
+}
+
+.footer span {
+	color: #eee;
+}
+
+address {
+	padding-top: 10px;
+	font-style: normal;
+	color: #fff;
+}
+
+.copyright {
+	padding-top: 10px;
+	color: #fff;
+}
+
+#modal {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 300;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	text-align: center;
+	padding-top: 10px;
+}
+
+#modal button {
+	padding: 6px 12px;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer
+}
+
+#modal.on {
+	display: block;
+}

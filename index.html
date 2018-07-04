@@ -1,0 +1,376 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+ <title>portfolio</title>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+ <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+ <link rel="stylesheet" href="assets/css/animations.css">
+ <link rel="stylesheet" href="assets/css/main.css" />
+ <!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+ <!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+ <script type="text/javascript">
+
+// 제이쿼리 아래에서 천천히 올라오는 효과
+$(document).ready(function(e) {
+    
+    $(".multiply_chart_top, .multiply_chart_middle").hide();
+     // chpter 첫번째 컨텐츠만 보이게 설정
+    
+    $(window).bind("scroll", contents_scroll); // 윈도우 창 전체에 이벤트를 걸어준다
+    
+});
+// 천천히 보이게 하는 자바스크립트 입니다.
+    function contents_scroll(){
+
+     blog_top_s=$(window).scrollTop(); // 스크롤이 내려갈시에 주는 변수
+
+    if(blog_top_s>=4800){ // 윈도우 문서가 스크롤 포지션이 2550px 내려갔을시
+        $(".multiply_chart_top").fadeIn();
+        $(".multiply_chart_top").stop(true).animate({
+            top: '0',
+            opacity:'1',
+        },"slow")
+    }
+        blog_top_s=$(window).scrollTop(); // 스크롤이 내려갈시에 주는 변수
+
+    if(blog_top_s>=2900){ // 윈도우 문서가 스크롤 포지션이 2900px 내려갔을시
+        $(".multiply_chart_middle").fadeIn();
+        $(" .multiply_chart_middle").stop(true).animate({
+            top: '0',
+            opacity:'1',
+        },"slow")
+    }
+
+}
+
+</script>
+ 
+</head>
+
+<body>
+
+ <!-- Wrapper -->
+ <div id="wrapper">
+
+  <!-- Header -->
+  <header id="header" class="alt">
+   <a href="index.html" class="logo"><strong>han's</strong> <span>portfolio</span></a>
+   <nav>
+    <a href="#menu">Menu</a>
+   </nav>
+  </header>
+
+  <!-- Menu -->
+  <nav id="menu">
+   <ul class="links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="landing.html">Landing</a></li>
+    <li><a href="generic.html">Generic</a></li>
+    <li><a href="elements.html">Elements</a></li>
+   </ul>
+   <ul class="actions vertical">
+    <li><a href="#" class="button special fit">Get Started</a></li>
+    <li><a href="#" class="button fit">Log In</a></li>
+   </ul>
+  </nav>
+
+  <!-- Banner -->
+  <section id="banner" class="major">
+   <div class="inner">
+    <header class="major">
+<!--     <h1>Welcome to Park Ki Han Portfolio.</h1>-->
+    </header>
+    <div class="content">
+     <p></p>
+     <ul class="actions">
+<!--      <li><a href="#one" class="button next scrolly">배너 이미지 더보기</a></li>-->
+     </ul>
+    </div>
+   </div>
+  </section>
+
+  <!-- Main -->
+  <div id="main">
+   <section id="two" class="spotlights">
+    <section>
+     <a href="generic.html" class="image">
+										<img src="images/pic08.jpg" alt="" data-position="center center">
+									</a>
+     <div class="content">
+      <div class="inner">
+       <header class="major">
+        <h3>STARBUCKS COFFEE</h3>
+       </header>
+       
+       <ul class="actions">
+        <li><a href="generic6.html" class="button">디자인 더보기</a></li>
+       </ul>
+      </div>
+     </div>
+    </section>
+    <section>
+     <a href="generic.html" class="image">
+										<img src="images/pic10.gif" alt="" data-position="top center">
+									</a>
+     <div class="content">
+      <div class="inner">
+       <header class="major">
+        <h3>HYUNDAI</h3>
+       </header>
+       
+       <ul class="actions">
+        <li><a href="generic7.html" class="button">디자인 더보기</a></li>
+       </ul>
+      </div>
+     </div>
+    </section>
+    <section>
+     <a href="generic.html" class="image">
+										<img src="images/pic10.jpg" alt="" data-position="25% 25%">
+									</a>
+     <div class="content">
+      <div class="inner">
+       <header class="major">
+        <h3>IKEA</h3>
+       </header>
+       <p>ikea는 외국사이트이다 보니 한국정서에 맞지않는 폼과 가격,수량 체크하는 부분이 달라 고객이 이용할때 불편한 점을 고려하여 필요없는 부분을 삭제하고 가구네임에 아이콘을 넣어 쉽고 빠르게 검색할수 있도록 하였습니다. </p>
+       <ul class="actions">
+<!--        <li><a href="generic.html" class="button">디자인 더보기</a></li>-->
+       </ul>
+      </div>
+     </div>
+    </section>
+
+    <!-- One -->
+    <section id="one" class="tiles">
+     <article>
+      <span class="image">
+										<img src="images/pic01.jpg" alt="" />
+									</span>
+      <header class="major">
+       <h3><a href="generic.html" class="link">NIKE</a></h3>
+       <p>Sports waer</p>
+      </header>
+     </article>
+     <article>
+      <span class="image">
+										<img src="images/pic02.jpg" alt="" />
+									</span>
+      <header class="major">
+       <h3><a href="generic1.html" class="link">TNGT</a></h3>
+       <p>MAN'S CASUAL</p>
+      </header>
+     </article>
+     <article>
+      <span class="image">
+										<img src="images/pic03.jpg" alt="" />
+									</span>
+      <header class="major">
+       <h3><a href="generic2.html" class="link">MAESTRO</a></h3>
+       <p>MAN'S SUIT/CASUAL TOTAL BRAND </p>
+      </header>
+     </article>
+     <article>
+      <span class="image">
+										<img src="images/pic04.jpg" alt="" />
+									</span>
+      <header class="major">
+       <h3><a href="generic3.html" class="link">SAMSUNG LIONS</a></h3>
+       <p>BASEBALL</p>
+      </header>
+     </article>
+     <article>
+      <span class="image">
+										<img src="images/pic05.jpg" alt="" />
+									</span>
+      <header class="major">
+       <h3><a href="generic4.html" class="link">POCALI SWEAT</a></h3>
+       <p>SPORTS DRINK</p>
+      </header>
+     </article>
+     <article>
+      <span class="image">
+										<img src="images/pic06.jpg" alt="" />
+									</span>
+      <header class="major">
+       <h3><a href="generic5.html" class="link">AG MALL</a></h3>
+       <p>MEDICINE MALL</p>
+      </header>
+     </article>
+    </section>
+
+    <!-- Two -->
+    <section id="two">
+     <div class="inner">
+      <header class="major">
+       <h2>박기한 상세 설명서</h2>
+      </header>
+      <p>박기한의 숨겨진 재능을 찾아보고 100%를 넘어 200% 까지 발전할수 있도록 활용해 보세요!</p>
+
+      <!-- icon 이미지 입니다 -->
+      <div class='animatedParent'>
+       <div class='animated bounceInDown'>
+        <ul class="multiply_chart_middle">
+         <li>
+
+          <div class="icon_ps"></div>
+          <div class="single-chart">
+           <svg viewBox="0 0 36 36" class="circular-chart blue">
+						<path class="circle-bg" d="M18 2.0845
+								a 15.9155 15.9155 0 0 1 0 31.831
+								a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+						<path class="circle" stroke-dasharray="90, 100" d="M18 2.0845
+								a 15.9155 15.9155 0 0 1 0 31.831
+								a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+						<text x="18" y="20.35" class="percentage">90%</text>
+					</svg>
+          </div>
+         </li>
+
+         <li>
+          <!-- icon 이미지 입니다 -->
+          <div class="icon_ai"></div>
+          <div class="single-chart">
+           <svg viewBox="0 0 36 36" class="circular-chart blue">
+					<path class="circle-bg" d="M18 2.0845
+							a 15.9155 15.9155 0 0 1 0 31.831
+							a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+					<path class="circle" stroke-dasharray="85, 100" d="M18 2.0845
+							a 15.9155 15.9155 0 0 1 0 31.831
+							a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+					<text x="18" y="20.35" class="percentage">85%</text>
+				</svg>
+          </div>
+         </li>
+         <li>
+          <!-- icon 이미지 입니다 -->
+          <div class="icon_pr"></div>
+          <div class="single-chart">
+           <svg viewBox="0 0 36 36" class="circular-chart blue">
+					<path class="circle-bg" d="M18 2.0845
+							a 15.9155 15.9155 0 0 1 0 31.831
+							a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+					<path class="circle" stroke-dasharray="70, 100" d="M18 2.0845
+							a 15.9155 15.9155 0 0 1 0 31.831
+							a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+					<text x="18" y="20.35" class="percentage">70%</text>
+				</svg>
+          </div>
+         </li>
+         <li>
+
+          <!-- icon 이미지 입니다 -->
+          <div class="icon_ae"></div>
+          <div class="single-chart">
+           <svg viewBox="0 0 36 36" class="circular-chart blue">
+					<path class="circle-bg" d="M18 2.0845
+							a 15.9155 15.9155 0 0 1 0 31.831
+							a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+					<path class="circle" stroke-dasharray="10, 100" d="M18 2.0845
+							a 15.9155 15.9155 0 0 1 0 31.831
+							a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+					<text x="18" y="20.35" class="percentage">10%</text>
+				</svg>
+          </div>
+         </li>
+        </ul>
+       </div>
+      </div>
+<!--
+      <ul class="actions">
+       <li><a href="landing.html" class="button next">Get Started</a></li>
+      </ul>
+-->
+     </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact">
+     <div class="inner">
+      <section>
+       <form method="post" action="#">
+        <div class="field half first">
+         <label for="name">Name</label>
+         <input type="text" name="name" id="name" />
+        </div>
+        <div class="field half">
+         <label for="email">Email</label>
+         <input type="text" name="email" id="email" />
+        </div>
+        <div class="field">
+         <label for="message">Message</label>
+         <textarea name="message" id="message" rows="6"></textarea>
+        </div>
+        <ul class="actions">
+         <li><input type="submit" value="Send Message" class="special" /></li>
+         <li><input type="reset" value="Clear" /></li>
+        </ul>
+       </form>
+      </section>
+      <section class="split">
+       <section>
+        <div class="contact-method">
+         <span class="icon alt fa-envelope"></span>
+         <h3>Email</h3>
+         <a href="#">kihancom@nate.com</a>
+        </div>
+       </section>
+       <section>
+        <div class="contact-method">
+         <span class="icon alt fa-phone"></span>
+         <h3>Phone</h3>
+         <span>(010) 7245-0050</span>
+        </div>
+       </section>
+       <section>
+        <div class="contact-method">
+         <span class="icon alt fa-home"></span>
+         <h3>Address</h3>
+         <span>경기도 시흥시 <br />
+										은행동 </span>
+        </div>
+       </section>
+      </section>
+     </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+     <div class="inner">
+      <ul class="icons">
+       <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+       <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+       <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+       <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
+       <li><a href="#" class="icon alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+      </ul>
+      <ul class="copyright">
+       <li>&copy; Untitled</li>
+       <li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+      </ul>
+     </div>
+    </footer>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/skel.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+  <script src="assets/js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/js/css3-animate-it.js"></script>
+</body>
+
+</html>
