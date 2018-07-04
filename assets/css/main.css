@@ -4353,6 +4353,7 @@ header.major h2 {
 
 			#wrapper {
 				padding-top: 2.75em;
+    overflow: hidden;
 			}
 
 		}
