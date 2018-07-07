@@ -3938,7 +3938,7 @@ header.major h2 {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/banner1.jpg");
+		background: #40B4E5 url("../../images/banner3.jpg");
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3947,7 +3947,7 @@ header.major h2 {
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: cover;
+		background-size: contain;
 		border-bottom: 0 !important;
 		cursor: default;
 		height: 60vh;
@@ -4042,7 +4042,7 @@ header.major h2 {
 				}
 
 		#banner.major {
-			height: 90vh;
+			height: 100vh;
 			min-height: 30em;
 			max-height: 50em;
 		}
@@ -4124,7 +4124,7 @@ header.major h2 {
 					}
 
 				#banner.major {
-					height: auto;
+					height: 30vh;
 					min-height: 0;
 					max-height: none;
 				}
